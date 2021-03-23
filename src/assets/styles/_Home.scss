@@ -1,0 +1,52 @@
+.bgVideo{
+    object-fit: cover;
+    width: 100%;
+    height: 90vh;
+    //stworzyć mixin
+    //@include nazwaMixina(propertiesy) example: postionMix(fixed, 3)
+    position: fixed;
+    top: 7rem;
+    z-index: -2;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+    
+    .inner {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      text-align: center;
+      animation:1s ease 2s normal forwards 1 fadein;
+      -webkit-animation:1s ease 2s normal forwards 1 fadein;
+      opacity:0
+    }
+    
+    .headline{
+        font-family: 'Yusei Magic', sans-serif;
+        text-transform: uppercase;
+        font-size: 5rem;
+        color: #fff;
+    }
+  }
+}
+
+    
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+  

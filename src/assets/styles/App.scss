@@ -1,0 +1,24 @@
+@import "./nav";
+@import "./Home";
+@import "./Button";
+@import "./Carousel";
+@import "./Card";
+@import "./SignUp";
+@import "./Footer";
+
+//tutaj zaimportować również mixiny
+
+body{ 
+    margin: 0;
+    padding: 0;
+}
+
+#app-id {
+    display: grid;
+    height: 100vh;
+}
+
+.container-main {
+//    min-height: 80vh;
+   height: 100%;
+} 

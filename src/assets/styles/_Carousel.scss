@@ -1,0 +1,45 @@
+@media (min-width: 1281px){
+    #carousel {
+        width: 75%;
+        height: 85vh;
+        background-color: black;
+        margin: 116px auto;
+
+        .carouselInner {
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            
+            .left{
+                flex: 5%;
+                height: 100%;
+                display: grid;
+                place-items: center;
+                color: white;
+                cursor: pointer;
+            }
+            .center{
+                flex: 90%;
+                height: 100%;
+            }
+            .right{
+                flex: 5%;
+                height: 100%;
+                height: 100%;
+                display: grid;
+                place-items: center;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 1281px){
+    #carousel{
+    display: none;
+    }
+}

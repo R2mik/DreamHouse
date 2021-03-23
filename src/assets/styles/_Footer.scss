@@ -1,0 +1,12 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+    background: #333;
+    color: white;
+    padding: 1.5em;
+    margin-top: auto;
+    z-index: 9;
+}
