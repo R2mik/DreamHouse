@@ -1,3 +1,3 @@
-Projekct of my company - Dream House
+Projekct of new company - Dream House
 
 We'll change your life 
