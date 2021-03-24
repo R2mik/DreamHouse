@@ -546,23 +546,6 @@ nav ul .td li .link:focus {
   background: #f2f2f2;
 }
 
-.cont .form-container .register-form .form-field span {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: red;
-  margin-bottom: 15px;
-}
-
-.cont .form-container .register-form .form-field textarea {
-  max-width: 310px;
-  background: #f2f2f2;
-}
-
-.cont .form-container .register-form .form-field .error {
-  border-style: solid;
-  border: 2px solid #ffa4a4;
-}
-
 .cont .form-container .register-form .form-field button {
   background: #1792d2;
   color: white;
@@ -571,6 +554,18 @@ nav ul .td li .link:focus {
 
 .cont .form-container .register-form .form-field button:disabled {
   cursor: default;
+}
+
+.cont .form-container .register-form .er {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.cont .form-container .register-form textarea {
+  max-width: 310px;
+  background: #f2f2f2;
 }
 
 body {
