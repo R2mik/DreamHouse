@@ -1,12 +1,12 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-import Nav from "./nav/Nav";
+import Nav from "./nav";
 import {AboutMe} from './about-me';
 import {Home} from './home';
-import Projekty from './projects/Projekty';
-import SignUp from './sign-up/SignUp';
-import Footer from './footer/Footer';
+import {Projekty} from './projects';
+import SignUp from './sign-up';
+import {Footer} from './footer';
 
 import '../assets/styles/App.css';
 

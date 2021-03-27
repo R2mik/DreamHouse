@@ -1,10 +1,12 @@
 import React from 'react'
 
+import {CHECK_OUT_PROJECTS} from '../../utils/constants'
+
 //domyslny parametr title, który można zmieniać przekazujać nową nazwę
-export const CardView = ({children, title = 'Jakis tekst'}) => (
+export const CardView = ({children}) => (
     <div className='cards'>
-        {/* przenieść do constants text stały */}
-        <h1 className="hdl">{title}</h1>
+        {/* move this sentence to constants / utils */}
+        <h1 className="hdl">{CHECK_OUT_PROJECTS}</h1>
         <div className='cards__containter'>
             <div className='cards__wrapper'>
                 <ul className='cards__items'>

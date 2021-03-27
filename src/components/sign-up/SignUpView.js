@@ -43,7 +43,7 @@ export const SignUpView = ({handleSubmit, submitForm, register, errors, valid}) 
                 />                   
                 <span className = "er">{errors.message?.message}</span>
                 
-                {valid ? null : <button className="form-field" type="submit">Wyślij</button>}
+                {valid ? null : <button className="send-btn form-field" type="submit">Wyślij</button>}
             </form>
         </div>
     </div>

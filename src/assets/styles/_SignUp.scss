@@ -33,15 +33,15 @@
           font-family: "Roboto", sans-serif;
           background: #f2f2f2;
           
-          button {
-            background: #1792d2;
-            color: white;
-            cursor: pointer;
-          }
-          
-          button:disabled {
-            cursor: default;
-          }
+        }
+        .send-btn {
+          background: #1792d2;
+          color: white;
+          cursor: pointer;
+        }
+        
+        .send-btn {
+          cursor: default;
         }
           
         .er {

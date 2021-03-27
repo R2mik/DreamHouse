@@ -378,6 +378,7 @@ nav ul .td li .link:focus {
   }
   .cards h1 {
     text-align: center;
+    margin-top: 3em;
   }
   .cards .cards__container {
     display: -webkit-box;
@@ -546,13 +547,13 @@ nav ul .td li .link:focus {
   background: #f2f2f2;
 }
 
-.cont .form-container .register-form .form-field button {
+.cont .form-container .register-form .send-btn {
   background: #1792d2;
   color: white;
   cursor: pointer;
 }
 
-.cont .form-container .register-form .form-field button:disabled {
+.cont .form-container .register-form .send-btn {
   cursor: default;
 }
 
@@ -599,6 +600,7 @@ body {
 }
 
 .container-main {
+  min-height: 100vh;
   height: 100%;
 }
 /*# sourceMappingURL=App.css.map */
