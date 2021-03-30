@@ -318,11 +318,15 @@ nav ul .td li .link:focus {
 }
 
 @media (min-width: 1281px) {
+  .hdl-1 {
+    margin-top: 4.5em;
+    text-align: center;
+  }
   #carousel {
     width: 75%;
     height: 85vh;
     background-color: black;
-    margin: 116px auto;
+    margin: 2em auto;
   }
   #carousel .carouselInner {
     height: 100%;
@@ -373,12 +377,12 @@ nav ul .td li .link:focus {
 
 @media (max-width: 1281px) {
   .cards {
-    padding: 4rem;
+    padding: 1rem;
     background: #fff;
   }
   .cards h1 {
     text-align: center;
-    margin-top: 3em;
+    margin-top: 1.5em;
   }
   .cards .cards__container {
     display: -webkit-box;
@@ -570,7 +574,7 @@ nav ul .td li .link:focus {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,11 +585,39 @@ body {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #333;
   color: white;
-  padding: 1.5em;
+  padding: 0 2em;
   margin-top: auto;
   z-index: 9;
+}
+
+.footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .row .col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .row .col .list-unstyled {
+  list-style: none;
 }
 
 body {
@@ -596,11 +628,10 @@ body {
 #app-id {
   display: -ms-grid;
   display: grid;
-  height: 100vh;
+  height: 130vh;
 }
 
 .container-main {
-  min-height: 100vh;
   height: 100%;
 }
 /*# sourceMappingURL=App.css.map */

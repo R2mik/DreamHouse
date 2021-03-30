@@ -4,6 +4,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 import { images } from './CarouselData';
 import {MoveImgLeft, MoveImgRight} from './move-images-buttons/MoveImg'
+import {CHECK_OUT_PROJECTS} from '../../utils/constants'
 
 export default function Carousel() {
     
@@ -12,6 +13,7 @@ export default function Carousel() {
     return (
         //move to CarouselView
         <div>
+            <h1 className="hdl-1">{CHECK_OUT_PROJECTS}</h1>
             <div id="carousel">
                 <div className="carouselInner" style={{backgroundImage: `url(${images[currentImg].img})`}}>
                     {/* create reusable component button put to move-images-button*/}

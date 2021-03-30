@@ -1,12 +1,27 @@
 body{
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
 }
 .footer {
+    display: flex;
+    flex-direction: column;
     background: #333;
     color: white;
-    padding: 1.5em;
+    padding: 0 2em;
     margin-top: auto;
     z-index: 9;
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        .col {
+            //display: flex;
+            flex-direction: column;
+           
+            .list-unstyled {
+                list-style: none;
+            }
+        }
+    }
 }

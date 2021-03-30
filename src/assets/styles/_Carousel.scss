@@ -1,9 +1,13 @@
 @media (min-width: 1281px){
+    .hdl-1{
+        margin-top: 4.5em;
+        text-align: center;
+    }
     #carousel {
         width: 75%;
         height: 85vh;
         background-color: black;
-        margin: 116px auto;
+        margin: 2em auto;
 
         .carouselInner {
             height: 100%;

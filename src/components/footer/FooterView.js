@@ -2,6 +2,35 @@ import React from 'react'
 
 export const FooterView = () => (
     <div className="footer">
-        <h1>Footer</h1>
+        <div className="row">
+            <div className="col">
+            <h3>Białystok</h3>
+                <ul className="list-unstyled">
+                    <li>Lipowa 1</li>
+                    <li>15-111</li>
+                    <li>tel. 111-111-111</li>
+                </ul>
+            </div>
+            <div className="col">
+                <h3>Warszawa</h3>
+                <ul className="list-unstyled">
+                    <li>Magnoliowa 2</li>
+                    <li>00-222</li>
+                    <li>tel. 222-222-222</li>
+                </ul>
+            </div>
+            <div className="col">
+                <h3>Gdańsk</h3>
+                <ul className="list-unstyled">
+                        <li>Angielska 3</li>
+                        <li>80-333</li>
+                        <li>tel. 333-333-333</li>
+                </ul>
+            </div>
+        </div>
+            <div className="footer-bot">
+                <hr/>
+                <p className="terms">&copy;{new Date().getFullYear()} All right reserved | Terms of service | Privacy</p>
+            </div>
     </div> 
 )
