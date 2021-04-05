@@ -1,31 +1,32 @@
 import React from 'react'
 
+import {FaFacebook, FaInstagram} from "react-icons/fa";
+import {FcPhone} from "react-icons/fc";
+import {MdEmail} from "react-icons/md";
+
+
 export const FooterView = () => (
     <div className="footer">
         <div className="row">
             <div className="col">
-            <h3>Białystok</h3>
-                <ul className="list-unstyled">
-                    <li>Lipowa 1</li>
-                    <li>15-111</li>
-                    <li>tel. 111-111-111</li>
-                </ul>
+                    <a href="https://www.facebook.com/me">
+                        <FaFacebook className="icons" size="2em" color="DodgerBlue"/>
+                    Facebook: DreamHouse</a>      
             </div>
             <div className="col">
-                <h3>Warszawa</h3>
-                <ul className="list-unstyled">
-                    <li>Magnoliowa 2</li>
-                    <li>00-222</li>
-                    <li>tel. 222-222-222</li>
-                </ul>
+                    <a href="https://www.instagram.com/me">
+                        <FaInstagram className="icons" size="2em" color="red" />
+                    Instagram: @dreamhouse</a>
             </div>
             <div className="col">
-                <h3>Gdańsk</h3>
-                <ul className="list-unstyled">
-                        <li>Angielska 3</li>
-                        <li>80-333</li>
-                        <li>tel. 333-333-333</li>
-                </ul>
+                    <a href="tel: 111-111-111">
+                        <FcPhone className="icons" size="2em"/>
+                        Phone: 111-111-111</a>
+            </div>
+            <div className="col">
+                    <a href="mailto: biuro@dreamhouse.com">
+                        <MdEmail className="icons" size="2em" color="white" />
+                    Email: biuro@dreamhouse.com</a>
             </div>
         </div>
             <div className="footer-bot">

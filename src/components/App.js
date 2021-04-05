@@ -7,6 +7,7 @@ import {Home} from './home';
 import {Projekty} from './projects';
 import SignUp from './sign-up';
 import {Footer} from './footer';
+import {Contact} from './contact'
 
 import '../assets/styles/App.css';
 
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/" exact component={Home}/>
             <Route path="/Projekty" component={Projekty}/>
             <Route path="/AboutMe" component={AboutMe}/>
+            <Route path="/Contact" component={Contact}/>
             <Route path="/Footer" component={Footer}/>
             <Route path="/sign-up" component={SignUp}/>
           </Switch>

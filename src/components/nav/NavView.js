@@ -27,7 +27,7 @@ export const NavView = (closeMobileMenu, showSidebar, sidebar) => (
                 <Link to="/about-me" className="td">
                     <li><p className="link">About Me</p></li>
                 </Link>
-                <Link to="/Kontakt" className="td">
+                <Link to="/Contact" className="td">
                     <li><p className="link">Kontakt</p></li>
                 </Link>
             </ul>
