@@ -1,4 +1,4 @@
-@import "./_mixins/flex-center";
+@import "./mixins/flex-center";
 
 body{
     min-height: 100%;
@@ -22,7 +22,7 @@ body{
         .col {
             //display: flex;
             flex-direction: column;
-
+           
             a {
                 @include flex-center;
                 color: white;
@@ -31,7 +31,6 @@ body{
                 .icons {
                     padding-right: auto;
                 }
-
             }
         }
     }

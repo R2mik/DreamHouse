@@ -7,7 +7,7 @@ import {Home} from './home';
 import {Projekty} from './projects';
 import SignUp from './sign-up';
 import {Footer} from './footer';
-import {Contact} from './contact'
+import {Contact} from './contact';
 
 import '../assets/styles/App.css';
 

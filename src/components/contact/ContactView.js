@@ -27,4 +27,4 @@ export const ContactView = () => (
             </ul>
         </div>
     </div>
-)
+) 
