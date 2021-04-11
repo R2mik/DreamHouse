@@ -1,8 +1,11 @@
 import React from 'react'
 
+import {GoogleMap} from "../google-maps"
+
 export const ContactView = () => (
     <div className="row">
         <div className="col">
+            <GoogleMap/>
             <h3>Białystok</h3>
             <ul className="list-unstyled">
                 <li>Lipowa 1</li>
@@ -11,6 +14,7 @@ export const ContactView = () => (
             </ul>
         </div>
         <div className="col">
+            <GoogleMap/>
             <h3>Warszawa</h3>
             <ul className="list-unstyled">
                 <li>Magnoliowa 2</li>
@@ -19,6 +23,7 @@ export const ContactView = () => (
             </ul>
         </div>
         <div className="col">
+            <GoogleMap/>
             <h3>Gdańsk</h3>
             <ul className="list-unstyled">
                     <li>Angielska 3</li>
