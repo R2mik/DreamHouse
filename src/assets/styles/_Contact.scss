@@ -1,0 +1,16 @@
+@import './mixins/grid-center';
+
+.grid-center{
+    @include grid-center;
+
+    .adress{
+        @include grid-center;
+
+        .list-unstyled{
+
+            .adr-li{
+                text-decoration: none;
+            }
+        }
+    }
+}

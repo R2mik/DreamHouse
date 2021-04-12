@@ -2,6 +2,8 @@ import React from 'react'
 
 import { GoogleMap, useLoadScript} from "@react-google-maps/api";
 
+import { TOWNS } from './GoogleMapsData'
+
 const libraries = ["places"];
 
 const mapContainerStyle = {
@@ -15,7 +17,7 @@ const center = {
 
 export function GooglemapsView() {
         const {isLoaded, loadError} = useLoadScript({
-                googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+                googleMapsApiKey: "AIzaSyAUWeGjaHllqysVRdbjkF3GnLBswlA5TwY",
                 libraries,
         })
 

@@ -638,6 +638,22 @@ body {
   padding-right: auto;
 }
 
+.grid-center {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.grid-center .adress {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.grid-center .adress .list-unstyled .adr-li {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   padding: 0;
