@@ -1,6 +1,7 @@
 import React from 'react';
-import {ContactView} from './ContactView';
+
+import {GooglemapsView} from '../google-maps/GoogleMapsView'
 
 export const Contact = () => (
-        <ContactView/>
+        <GooglemapsView/>
 );
