@@ -1,15 +1,27 @@
 @import './mixins/grid-center';
-
-.grid-center{
-    @include grid-center;
-
-    .adress{
+.map-cont{
+    padding-top: 120px;
+    .grid-center{
         @include grid-center;
 
-        .list-unstyled{
+        .adress{
+            @include grid-center;
+            
+            h3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
             .adr-li{
-                text-decoration: none;
+                @include grid-center;
+                padding: 0px;
+                margin: 2em;
+
+                p{
+                    margin: 0;
+                    font-size: 1.2rem;
+                }
             }
         }
     }

@@ -41,45 +41,44 @@ export function GooglemapsView() {
         if(!isLoaded) return "Loading Maps";
         
         return(
-                <div className="grid-center">
-                        <div className="adress">
-                                <GoogleMap 
-                                        mapContainerStyle={mapContainerStyle} 
-                                        zoom={15}
-                                        center={centerB}                 
-                                ></GoogleMap>
-                                <h3>Białystok</h3>
-                                <ul className="list-unstyled">
-                                        <li className="adr-li">Lipowa 1</li>
-                                        <li className="adr-li">15-111</li>
-                                        <li className="adr-li">tel. 111-111-111</li>
-                                </ul>
-                        </div>
-                        <div className="adress">
-                                <GoogleMap 
-                                        mapContainerStyle={mapContainerStyle} 
-                                        zoom={15}
-                                        center={centerW}                 
-                                ></GoogleMap>
-                                <h3>Warszawa</h3>
-                                <ul className="list-unstyled">
-                                        <li className="adr-li">Królewska 2</li>
-                                        <li className="adr-li">00-222</li>
-                                        <li className="adr-li">tel. 222-222-222</li>
-                                </ul>
-                        </div>
-                        <div className="adress">
-                                <GoogleMap 
-                                        mapContainerStyle={mapContainerStyle} 
-                                        zoom={15}
-                                        center={centerG}                 
-                                ></GoogleMap>
-                                <h3>Gdańsk</h3>
-                                <ul className="list-unstyled">
-                                        <li className="adr-li">Angielska 3</li>
-                                        <li className="adr-li">80-333</li>
-                                        <li className="adr-li">tel. 333-333-333</li>
-                                </ul>
+                <div className="map-cont">
+                        <div className="grid-center">
+                                <div className="adress">
+                                        <GoogleMap 
+                                                mapContainerStyle={mapContainerStyle} 
+                                                zoom={15}
+                                                center={centerB}                 
+                                        ></GoogleMap>
+                                        <div className="adr-li">
+                                                <p>Lipowa 1</p>
+                                                <p>15-111 Białystok</p>
+                                                <p>tel. 111-111-111</p>
+                                        </div>
+                                </div>
+                                <div className="adress">
+                                        <GoogleMap 
+                                                mapContainerStyle={mapContainerStyle} 
+                                                zoom={15}
+                                                center={centerW}                 
+                                        ></GoogleMap>
+                                        <div className="adr-li">
+                                                <p>Królewska 2</p>
+                                                <p>00-222 Warszawa</p>
+                                                <p>tel. 222-222-222</p>
+                                        </div>
+                                </div>
+                                <div className="adress">
+                                        <GoogleMap 
+                                                mapContainerStyle={mapContainerStyle} 
+                                                zoom={15}
+                                                center={centerG}                 
+                                        ></GoogleMap>
+                                        <div className="adr-li">
+                                                <p>Angielska 3</p>
+                                                <p>80-333 Gdańsk</p>
+                                                <p>tel. 333-333-333</p>
+                                        </div>
+                                </div>
                         </div>
                 </div>
         )

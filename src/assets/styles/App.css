@@ -638,20 +638,90 @@ body {
   padding-right: auto;
 }
 
-.grid-center {
+.map-cont {
+  padding-top: 120px;
+}
+
+.map-cont .grid-center {
   display: -ms-grid;
   display: grid;
   place-items: center;
 }
 
-.grid-center .adress {
+.map-cont .grid-center .adress {
   display: -ms-grid;
   display: grid;
   place-items: center;
 }
 
-.grid-center .adress .list-unstyled .adr-li {
-  text-decoration: none;
+.map-cont .grid-center .adress h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map-cont .grid-center .adress .adr-li {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 0px;
+  margin: 2em;
+}
+
+.map-cont .grid-center .adress .adr-li p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.au-cont {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.au-cont .au-col {
+  margin: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2em;
+}
+
+.au-cont .au-col * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.au-cont .au-col .left-side {
+  border: 1px black solid;
+  padding: 0.5em;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  margin: 0;
+}
+
+.au-cont .au-col .card-flow {
+  border: 1px blue solid;
+  padding: 0.5em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0;
+}
+
+.au-cont .au-col .card-flow .tex-par {
+  font-size: 1.1em;
 }
 
 body {

@@ -1,0 +1,31 @@
+.au-cont{
+    margin-top: 150px;
+    display: flex;
+
+    .au-col{
+        margin: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        *{
+            flex-grow: 1;
+        }
+        .left-side{
+            border: 1px black solid;
+            padding: 0.5em;
+            //flex-basis: 400px ;
+            flex-grow: 0;
+            margin: 0;
+
+        }
+        .card-flow{
+            border: 1px blue solid;
+            padding: 0.5em;
+            flex-grow: 1;
+            margin: 0;
+            .tex-par{
+                font-size: 1.1em;
+            }
+        }
+    }
+}

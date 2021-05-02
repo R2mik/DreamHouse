@@ -22,7 +22,7 @@ export default function App() {
           {/* 1. create array with routes , 2. iterate this array using method map */}
             <Route path="/" exact component={Home}/>
             <Route path="/Projekty" component={Projekty}/>
-            <Route path="/AboutMe" component={AboutMe}/>
+            <Route path="/about-me" component={AboutMe}/>
             <Route path="/Contact" component={Contact}/>
             <Route path="/Footer" component={Footer}/>
             <Route path="/sign-up" component={SignUp}/>
