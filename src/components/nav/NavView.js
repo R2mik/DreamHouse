@@ -21,14 +21,14 @@ export const NavView = (closeMobileMenu, showSidebar, sidebar) => (
             {/* {...{  onClick: showSidebar, className: ....}} */}
             <ul className={changeNavBarClassName(sidebar, 'change navbar', "navbar")} onClick={()=>showSidebar}>
                 {/* 1. create array with object, 2. iterate this array using method map  */}
-                <Link to="/Projekty"  className="td">
-                    <li><p className="link">Projekty</p></li>
+                <Link to="/Projects"  className="td">
+                    <li><p className="link">Projects</p></li>
                 </Link>
                 <Link to="/about-me" className="td">
                     <li><p className="link">About Me</p></li>
                 </Link>
                 <Link to="/Contact" className="td">
-                    <li><p className="link">Kontakt</p></li>
+                    <li><p className="link">Contact</p></li>
                 </Link>
             </ul>
         </nav>

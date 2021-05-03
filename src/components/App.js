@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Nav from "./nav";
 import {AboutMe} from './about-me';
 import {Home} from './home';
-import {Projekty} from './projects';
+import {Projects} from './projects';
 import SignUp from './sign-up';
 import {Footer} from './footer';
 import {Contact} from './contact';
@@ -21,7 +21,7 @@ export default function App() {
           <Switch>
           {/* 1. create array with routes , 2. iterate this array using method map */}
             <Route path="/" exact component={Home}/>
-            <Route path="/Projekty" component={Projekty}/>
+            <Route path="/Projects" component={Projects}/>
             <Route path="/about-me" component={AboutMe}/>
             <Route path="/Contact" component={Contact}/>
             <Route path="/Footer" component={Footer}/>

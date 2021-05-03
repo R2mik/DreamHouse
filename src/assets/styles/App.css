@@ -92,6 +92,7 @@ nav ul .td li .link:focus {
     text-align: center;
   }
   .container-nav nav {
+    border: 2px solid black;
     width: 30%;
     height: 100%;
     background-color: #f3f3f3;
