@@ -19,7 +19,7 @@ export const NavView = (closeMobileMenu, showSidebar, sidebar) => (
                 <div className='line line-3'></div>
             </div>
             {/* {...{  onClick: showSidebar, className: ....}} */}
-            <ul onClick={()=>showSidebar} className={changeNavBarClassName(sidebar, 'change navbar', "navbar")}>
+            <ul onClick={()=>showSidebar} className={changeNavBarClassName(sidebar,"navbar", 'change navbar')}>
                 {/* 1. create array with object, 2. iterate this array using method map  */}
                 <Link to="/Projects"  className="td">
                     <li><p className="link">Projects</p></li>
