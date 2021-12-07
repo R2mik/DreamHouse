@@ -20,7 +20,7 @@ export default function App() {
         <div className="container-main">
           <Switch>
           {/* 1. create array with routes , 2. iterate this array using method map */}
-            <Route path="/" exact component={Home}/>
+            <Route path="/DreamHouse" component={Home}/>
             <Route path="/Projects" component={Projects}/>
             <Route path="/about-me" component={AboutMe}/>
             <Route path="/Contact" component={Contact}/>
