@@ -1,6 +1,8 @@
 import React from 'react'
 
 import { GoogleMap, useLoadScript} from "@react-google-maps/api";
+
+import {REACT_APP_GOOGLE_MAPS_API_KEY} from "./env.local";
 //import { SPOTS } from "./GoogleMapsData";
 
 /* const spotsList = SPOTS.map((spot) => ({lat:spot.lat, lng:spot.lng}))
@@ -32,7 +34,7 @@ const centerG = {
 
 export function GooglemapsView() {
         const {isLoaded, loadError} = useLoadScript({
-                googleMapsApiKey: "AIzaSyAUWeGjaHllqysVRdbjkF3GnLBswlA5TwY",
+                googleMapsApiKey: {REACT_APP_GOOGLE_MAPS_API_KEY},
                 libraries,
         })
         
