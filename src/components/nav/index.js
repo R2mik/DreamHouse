@@ -30,6 +30,12 @@ export default function Nav(){
             {/* {...{  onClick: showSidebar, className: ....}} */}
             <ul onClick={()=>showSidebar()} className={changeNavBarClassName(sidebar, 'change navbar', "navbar")}>
                 {/* 1. create array with object, 2. iterate this array using method map  */}
+                <Link to="/"  className="td">
+                    <li><p className="link">Home</p></li>
+                </Link>
+                <Link to="/sign-up"  className="td">
+                    <li><p className="link">Sign Up</p></li>
+                </Link>                
                 <Link to="/Projects"  className="td">
                     <li><p className="link">Projects</p></li>
                 </Link>

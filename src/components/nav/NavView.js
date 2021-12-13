@@ -6,7 +6,7 @@ import { changeNavBarClassName } from './utils'
 export const NavView = (closeMobileMenu, showSidebar, sidebar) => (
     <div className="container container-nav">
         <header>
-            <Link to="/" className="side-title" onClick={()=>closeMobileMenu}>
+            <Link to="/" className="side-title" onClick={()=>closeMobileMenu()}>
                 <h1>Dream House</h1>
                 <p className="subtitle">Live your dream</p>
             </Link>
@@ -21,6 +21,12 @@ export const NavView = (closeMobileMenu, showSidebar, sidebar) => (
             {/* {...{  onClick: showSidebar, className: ....}} */}
             <ul onClick={()=>showSidebar()} className={changeNavBarClassName(sidebar, 'change navbar', "navbar")}>
                 {/* 1. create array with object, 2. iterate this array using method map  */}
+                <Link to="/"  className="td">
+                    <li><p className="link">Home</p></li>
+                </Link>   
+                <Link to="/sign-up"  className="td">
+                    <li><p className="link">Sign up</p></li>
+                </Link>              
                 <Link to="/Projects"  className="td">
                     <li><p className="link">Projects</p></li>
                 </Link>
