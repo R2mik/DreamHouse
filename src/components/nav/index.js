@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 
 import { changeNavBarClassName } from './utils'
+import { Array } from './array';
 //import { NavView } from './NavView';
 
 
@@ -11,7 +12,7 @@ export default function Nav(){
 
     const showSidebar = () => setSidebar(!sidebar);
     const closeMobileMenu = () => setSidebar(true);
-     
+
     return(
         <div className="container container-nav">
         <header>
@@ -30,21 +31,13 @@ export default function Nav(){
             {/* {...{  onClick: showSidebar, className: ....}} */}
             <ul onClick={()=>showSidebar()} className={changeNavBarClassName(sidebar, 'change navbar', "navbar")}>
                 {/* 1. create array with object, 2. iterate this array using method map  */}
-                <Link to="/"  className="td">
-                    <li><p className="link">Home</p></li>
-                </Link>
-                <Link to="/sign-up"  className="td">
-                    <li><p className="link">Sign Up</p></li>
-                </Link>                
-                <Link to="/Projects"  className="td">
-                    <li><p className="link">Projects</p></li>
-                </Link>
-                <Link to="/about-me" className="td">
-                    <li><p className="link">About Me</p></li>
-                </Link>
-                <Link to="/Contact" className="td">
-                    <li><p className="link">Contact</p></li>
-                </Link>
+                {Array.map(item => {
+                    return(
+                        <Link to={item.to}  className="td">
+                            <li><p className="link">{item.text}</p></li>
+                        </Link>
+                    )})
+                }             
             </ul>
         </nav>
         </div>

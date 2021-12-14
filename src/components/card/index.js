@@ -6,22 +6,22 @@ import { CardView } from './CardView'
 
 //->changed this to export const 
 export const Card = () => (
-                    <CardView {...{
-                        children: (
-                            images.map(({id, title: text, img: src, label, path} ) => 
-                            // images.map((item) => 
-                            <CardItem 
-                                key={`${id}${text}${label}`}
-                                {...{
-                                    src,
-                                    // src: item.src,
-                                    text,
-                                    label,
-                                    path
-                                }}
-                            />)
-                        )
-                    }}/>             
+    <CardView {...{
+        children: (
+            images.map(({id, title: text, img: src, label, path} ) => 
+            // images.map((item) => 
+            <CardItem 
+                key={`${id}${text}${label}`}
+                {...{
+                    src,
+                    // src: item.src,
+                    text,
+                    label,
+                    path
+                }}
+            />)
+        )
+    }}/>             
 )
 
 //javascript methods: map, filter, pop,find,  fill, reduce ,ect. - methods array
