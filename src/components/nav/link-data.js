@@ -1,4 +1,4 @@
-export const Array = [
+export const LData = [
     {
         to: "/",
         text: "Home "
@@ -10,10 +10,6 @@ export const Array = [
     {
         to: "/Projects",
         text: "Projects "
-    },
-    {
-        to: "/about-me",
-        text: "About me "
     },
     {
         to: "/Contact",

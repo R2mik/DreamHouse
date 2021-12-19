@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 
 import { changeNavBarClassName } from './utils'
-import { Array } from './array';
+import { LData } from './link-data';
 //import { NavView } from './NavView';
 
 
@@ -30,8 +30,8 @@ export default function Nav(){
             </div>
             {/* {...{  onClick: showSidebar, className: ....}} */}
             <ul onClick={()=>showSidebar()} className={changeNavBarClassName(sidebar, 'change navbar', "navbar")}>
-                {/* 1. create array with object, 2. iterate this array using method map  */}
-                {Array.map(item => {
+                {/* 1. created array with object, 2. iterated this array using method map  */}
+                {LData.map(item => {
                     return(
                         <Link to={item.to}  className="td">
                             <li><p className="link">{item.text}</p></li>

@@ -1,4 +1,5 @@
 import React from 'react'
+// import { IData } from './input-data'
 
 export const SignUpView = ({handleSubmit, submitForm, register, errors, valid}) => (
     <div className="cont">
@@ -6,8 +7,8 @@ export const SignUpView = ({handleSubmit, submitForm, register, errors, valid}) 
             <form className="register-form" onSubmit={handleSubmit(submitForm)}>
             
             { valid  ? <div className="success-message">Sukces! Wiadomość została wysłana</div> : null}
-
-            <input
+           
+                <input
                 className="form-field"
                 type="text"
                 placeholder="First Name"
@@ -42,6 +43,23 @@ export const SignUpView = ({handleSubmit, submitForm, register, errors, valid}) 
                 ref={register}
                 />                   
                 <span className = "er">{errors.message?.message}</span>
+
+{/*            {IData.map( input => {
+                return (
+                    <>
+                        <input
+                        className="form-field"
+                        type="text"
+                        placeholder={input.placeholder}
+                        name={input.name}
+                        ref={register}
+                        />
+                        <span className = "er">{errors.firstName?.message}</span>
+                    </>
+                )
+            })}
+*/}
+               
                 
                 {valid ? null : <button className="send-btn form-field" type="submit">Send</button>}
             </form>

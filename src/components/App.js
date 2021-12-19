@@ -2,7 +2,6 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import Nav from "./nav";
-import {AboutMe} from './about-me';
 import {Home} from './home';
 import {Projects} from './projects';
 import SignUp from './sign-up';
@@ -22,7 +21,6 @@ export default function App() {
           {/* 1. create array with routes , 2. iterate this array using method map */}
             <Route path="/" exact component={Home}/>
             <Route path="/Projects" component={Projects}/>
-            <Route path="/about-me" component={AboutMe}/>
             <Route path="/Contact" component={Contact}/>
             <Route path="/Footer" component={Footer}/>
             <Route path="/sign-up" component={SignUp}/>
