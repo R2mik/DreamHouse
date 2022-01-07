@@ -1,14 +1,14 @@
 import React from 'react'
 
 import CardItem from './CardItem'
-import { images } from '../carousel/CarouselData';
+import { Images } from '../carousel/CarouselData';
 import { CardView } from './CardView'
 
 //->changed this to export const 
 export const Card = () => (
     <CardView {...{
         children: (
-            images.map(({id, title: text, img: src, label, path} ) => 
+            Images.map(({id, title: text, img: src, label, path} ) => 
             // images.map((item) => 
             <CardItem 
                 key={`${id}${text}${label}`}

@@ -1,7 +1,7 @@
 
 //IMAGES BIG WORD BECAUSE WE HAVE CONSTANTS OBJECTS INSIDE ARRAY
 // add Object.freeze 
-export const images = [
+export const Images = [
     {
         id: 1,
         title: 'Monty Python - Białystok',
