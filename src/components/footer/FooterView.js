@@ -1,8 +1,8 @@
 import React from 'react'
 
-import {FaFacebook, FaInstagram} from "react-icons/fa";
-import {FcPhone} from "react-icons/fc";
-import {MdEmail} from "react-icons/md"; 
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FcPhone } from "react-icons/fc";
+import { MdEmail } from "react-icons/md"; 
 
 export const FooterView = () => (
     <div className="footer">

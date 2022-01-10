@@ -4,17 +4,14 @@ import CardItem from './CardItem'
 import { Images } from '../carousel/CarouselData';
 import { CardView } from './CardView'
 
-//->changed this to export const 
 export const Card = () => (
     <CardView {...{
         children: (
             Images.map(({id, title: text, img: src, label, path} ) => 
-            // images.map((item) => 
             <CardItem 
                 key={`${id}${text}${label}`}
                 {...{
-                    src,
-                    // src: item.src,
+                    src, 
                     text,
                     label,
                     path
@@ -23,9 +20,3 @@ export const Card = () => (
         )
     }}/>             
 )
-
-//javascript methods: map, filter, pop,find,  fill, reduce ,ect. - methods array
-// [
-//     { object 1}, - iteraration 1
-//     { object 2} - iteration 2
-// ]

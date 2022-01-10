@@ -4,8 +4,6 @@ import home3 from '../../assets/images/home3.jpg'
 import home4 from '../../assets/images/home4.jpg'
 import home5 from '../../assets/images/home5.jpg'
 
-//IMAGES BIG WORD BECAUSE WE HAVE CONSTANTS OBJECTS INSIDE ARRAY
-// add Object.freeze 
 export const Images = [
     {
         id: 1,

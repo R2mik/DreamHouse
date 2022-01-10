@@ -1,7 +1,7 @@
 import React from 'react'
 
-import {Button} from '../shared'
-import {INCREASE_LEVEL_LIFE} from '../../utils/constants'
+import { Button } from '../shared'
+import { INCREASE_LEVEL_LIFE } from '../../utils/constants'
 
 export const HomeView = () => (
     <div>
@@ -12,7 +12,6 @@ export const HomeView = () => (
         <div className='middle'>
             <div className='inner'>
                 <h1 className="headline">{INCREASE_LEVEL_LIFE}</h1>
-                {/*-> move this sentence to constants/utils */}
                 {<Button className='btns' buttonStyle='btn-outline' buttonSize='btn-large'><b>GET STARTED</b></Button>}
             </div>
         </div>
