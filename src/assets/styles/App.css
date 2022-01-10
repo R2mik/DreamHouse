@@ -248,7 +248,7 @@ nav ul .td li .link:focus {
 .outer .middle .headline {
   font-family: 'Yusei Magic', sans-serif;
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: calc(20px + 3vw);
   color: #fff;
 }
 
@@ -308,7 +308,7 @@ nav ul .td li .link:focus {
 
 .btn-mobile .btn-large {
   padding: 12px 26px;
-  font-size: 20px;
+  font-size: calc(12px + 1vw);
 }
 
 .btn-mobile .btn-medium:hover, .btn-mobile .btn-large:hover {
@@ -516,7 +516,7 @@ nav ul .td li .link:focus {
 .cont .form-container {
   width: 360px;
   background-color: white;
-  margin: auto;
+  margin: 200px auto;
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   padding: 10px;
@@ -678,51 +678,6 @@ body {
 .map-cont .grid-center .adress .adr-li p {
   margin: 0;
   font-size: 1.2rem;
-}
-
-.au-cont {
-  margin-top: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.au-cont .au-col {
-  margin: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 2em;
-}
-
-.au-cont .au-col * {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.au-cont .au-col .left-side {
-  border: 1px black solid;
-  padding: 0.5em;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  margin: 0;
-}
-
-.au-cont .au-col .card-flow {
-  border: 1px blue solid;
-  padding: 0.5em;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: 0;
-}
-
-.au-cont .au-col .card-flow .tex-par {
-  font-size: 1.1em;
 }
 
 body {

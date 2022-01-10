@@ -14,11 +14,12 @@
     top: 0;
     
     header {
+        text-align: center;
+        padding:  2em 2em;
+        
         .side-title {
             text-decoration: none;
         }
-        text-align: center;
-        padding:  2em 2em;
     
         h1{
             font-family: 'Lora', serif;

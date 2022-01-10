@@ -34,7 +34,7 @@
     
     .btn-large {
         padding: 12px 26px;
-        font-size: 20px;
+        font-size: calc(12px + 1vw);
     }
     
     .btn-medium:hover, .btn-large:hover{
