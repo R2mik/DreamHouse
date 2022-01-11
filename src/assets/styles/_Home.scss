@@ -1,12 +1,28 @@
+@media (min-width: 736px){
 .bgVideo{
     object-fit: cover;
     width: 100%;
-    height: 90vh;
-    //stworzyć mixin
-    //@include nazwaMixina(propertiesy) example: postionMix(fixed, 3)
+    height: 100%;
     position: fixed;
-    top: 7rem;
+    top: calc(2vh + 4em);
     z-index: -2;
+}
+}
+
+@media (max-width: 736px){
+  .bgVideo {
+    display: none;
+  }
+  .bg {
+    background-image: url(../images/home-page3.jpg);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-position: center;
+    top: calc(2vh + 4em);
+    z-index: -2;
+    background-repeat: no-repeat;
+  }
 }
 
 .outer {

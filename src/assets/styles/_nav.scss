@@ -1,5 +1,6 @@
 .container {
     width: 100%;
+    height: calc(3vh + 4em);
     margin: 0 auto;
     background: #f8f8f8;
     z-index: 10;
@@ -71,7 +72,7 @@ nav {
 }
 
 
-@media (max-width: 675px){
+@media (max-width: 736px){
     .container-nav{
         flex-direction: column;
         position: fixed;
@@ -81,7 +82,6 @@ nav {
             text-align: center;
         }
         nav {
-            border: 2px solid black;
             width: 30%;
             height: 100%;
             background-color: #f3f3f3;

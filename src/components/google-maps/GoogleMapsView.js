@@ -7,7 +7,7 @@ import { SPOTS } from "./GoogleMapsData";
 const libraries = ["places"];
 
 const mapContainerStyle = {
-        width: "50vw",
+        width: "70vw",
         height: "50vh",
 };
 

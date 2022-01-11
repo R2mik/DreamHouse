@@ -28,9 +28,9 @@ export const FooterView = () => (
                 Email: biuro@dreamhouse.com</a>
             </div>
         </div>
-            <div className="footer-bot">
+            {/* <div className="footer-bot">
                 <hr/>
                 <p className="terms">&copy;{new Date().getFullYear()} All right reserved | Terms of service | Privacy</p>
-            </div>
+            </div> */}
     </div> 
 )

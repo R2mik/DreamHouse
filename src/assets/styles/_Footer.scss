@@ -13,6 +13,8 @@ body{
     padding: 1em 2em;
     margin-top: auto;
     z-index: 9;
+    clear: both;
+    margin-top: auto;
 
     .row{
         display: flex;
@@ -21,7 +23,7 @@ body{
         padding: 1em auto;
         .col {
             //display: flex;
-            flex-direction: column;
+            //flex-direction: column;
            
             a {
                 @include flex-center;

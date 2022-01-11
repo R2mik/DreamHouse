@@ -23,8 +23,8 @@ export default function App() {
             <Route path="/Footer" component={Footer}/>
             <Route path="/sign-up" component={SignUp}/>
           </Switch>
-        </div>
         <Footer/>
+        </div>
       </div>
       </Router>
     );
