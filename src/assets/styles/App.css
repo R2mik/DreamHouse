@@ -2,7 +2,7 @@
   width: 100%;
   height: calc(3vh + 4em);
   margin: 0 auto;
-  background: #f8f8f8;
+  background: #f3f3f3;
   z-index: 10;
 }
 
@@ -13,6 +13,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -67,7 +70,7 @@ nav ul .td li {
 
 nav ul .td li .link {
   text-decoration: none;
-  color: #707070;
+  color: rgba(51, 51, 51, 0.822);
   font-weight: 700;
 }
 
@@ -102,12 +105,12 @@ nav ul .td li .link:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-radius: 20% 0 0 50%;
     -webkit-transition: right 0.8s cubic-bezier(1, 0, 0, 1);
     transition: right 0.8s cubic-bezier(1, 0, 0, 1);
@@ -168,7 +171,7 @@ nav ul .td li .link:focus {
   }
   .container-nav ul .td li .link {
     text-decoration: none;
-    color: #707070;
+    color: rgba(51, 51, 51, 0.822);
   }
   .container-nav ul .td li .link::before {
     content: "";
@@ -211,12 +214,15 @@ nav ul .td li .link:focus {
 }
 
 @media (min-width: 736px) {
-  .bgVideo {
+  .video-cont {
+    width: 100vw;
+    height: 100vh;
+  }
+  .video-cont .bgVideo {
     -o-object-fit: cover;
        object-fit: cover;
-    width: 100%;
     height: 100%;
-    position: fixed;
+    width: 100%;
     top: calc(2vh + 4em);
     z-index: -2;
   }
@@ -288,10 +294,6 @@ nav ul .td li .link:focus {
   }
 }
 
-:root {
-  --primary: #fff;
-}
-
 .btn-mobile {
   cursor: pointer;
 }
@@ -305,16 +307,16 @@ nav ul .td li .link:focus {
 }
 
 .btn-mobile .btn-primary {
-  background-color: var(--primary);
+  background-color: #fff;
   color: #242424;
-  border: 2px solid var(--primary);
+  border: 2px solid #fff;
 }
 
 .btn-mobile .btn-outline {
   background-color: transparent;
   color: #fff;
   padding: 8px 20px;
-  border: 2px solid var(--primary);
+  border: 2px solid #fff;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -344,28 +346,27 @@ nav ul .td li .link:focus {
   #carousel {
     width: 75%;
     height: 85vh;
-    background-color: black;
     margin: 2em auto;
   }
   #carousel .carouselInner {
-    height: 100%;
-    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   #carousel .carouselInner .left {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
     -webkit-box-flex: 5%;
         -ms-flex: 5%;
             flex: 5%;
     height: 100%;
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-    color: white;
+    color: #fff;
     cursor: pointer;
   }
   #carousel .carouselInner .center {
@@ -375,15 +376,14 @@ nav ul .td li .link:focus {
     height: 100%;
   }
   #carousel .carouselInner .right {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
     -webkit-box-flex: 5%;
         -ms-flex: 5%;
             flex: 5%;
     height: 100%;
-    height: 100%;
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-    color: white;
+    color: #fff;
     cursor: pointer;
   }
 }
@@ -496,7 +496,7 @@ nav ul .td li .link:focus {
   font-size: 12px;
   font-weight: 700;
   color: #fff;
-  background-color: #1f98f4;
+  background-color: #1792d2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -506,7 +506,7 @@ nav ul .td li .link:focus {
 }
 
 .cards__item .cards__item__link .cards__item__info .cards__item__text {
-  color: #252e48;
+  color: #143774;
   font-size: 18px;
   line-height: 24px;
 }
@@ -518,22 +518,22 @@ nav ul .td li .link:focus {
 }
 
 .cont {
-  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 80vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  height: calc(100vh - 64px);
 }
 
 .cont .form-container {
   width: 360px;
-  background-color: white;
+  background-color: #fff;
   margin: 200px auto;
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -558,7 +558,7 @@ nav ul .td li .link:focus {
   font-family: "Roboto", sans-serif;
   background-color: #43d217e0;
   padding: 15px;
-  color: white;
+  color: #fff;
 }
 
 .cont .form-container .register-form .form-field {
@@ -572,7 +572,7 @@ nav ul .td li .link:focus {
 
 .cont .form-container .register-form .send-btn {
   background: #1792d2;
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -611,8 +611,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #333;
-  color: white;
+  background: rgba(51, 51, 51, 0.822);
+  color: #fff;
   padding: 1em 2em;
   margin-top: auto;
   z-index: 9;
@@ -634,6 +634,16 @@ body {
   padding: 1em auto;
 }
 
+.footer .row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .footer .row .col a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -644,7 +654,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
+  color: #fff;
   font-size: 1em;
 }
 
@@ -672,12 +682,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .map-cont .grid-center .adress .adr-li {
@@ -701,10 +711,5 @@ body {
 #app-id {
   display: -ms-grid;
   display: grid;
-  height: 130vh;
-}
-
-.container-main {
-  height: 100%;
 }
 /*# sourceMappingURL=App.css.map */

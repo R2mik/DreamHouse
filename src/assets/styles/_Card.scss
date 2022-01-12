@@ -1,7 +1,7 @@
 @media (max-width: 1281px){
   .cards {
     padding: 1rem;
-    background: #fff;
+    background: $white;
     
     h1 {
       text-align: center;
@@ -38,9 +38,9 @@ flex: 1;
     display: flex;
     flex-flow: column;
     width: 100%;
-    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    box-shadow: 0 6px 20px $shadow-color;
+    -webkit-filter: drop-shadow(0 6px 20px $drop-shadow-color);
+    filter: drop-shadow(0 6px 20px $drop-shadow-color);
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
@@ -81,8 +81,8 @@ flex: 1;
       max-width: calc((100%) - 60px);
       font-size: 12px;
       font-weight: 700;
-      color: #fff;
-      background-color: #1f98f4;
+      color: $white;
+      background-color: $blue;
       box-sizing: border-box;
     }
     
@@ -90,7 +90,7 @@ flex: 1;
       padding: 20px 30px 30px;
         
       .cards__item__text {
-        color: #252e48;
+        color: $dark-blue;
         font-size: 18px;
         line-height: 24px;
       }

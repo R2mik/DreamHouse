@@ -1,3 +1,9 @@
+@import './breakpoints/breakpoints';
+@import './mixins/flex-center';
+@import './mixins/grid-center';
+@import './mixins/bg-image';
+@import './utils/utils';
+
 @import "./nav";
 @import "./Home";
 @import "./Button";
@@ -7,8 +13,6 @@
 @import "./Footer";
 @import "./Contact";
 
-//tutaj zaimportować również mixiny
-
 body{ 
     margin: 0;
     padding: 0;
@@ -16,10 +20,4 @@ body{
 
 #app-id {
     display: grid;
-    height: 130vh;
 }
-
-.container-main {
-   //min-height: 100vh;
-   height: 100%;
-} 
