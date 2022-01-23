@@ -116,11 +116,11 @@ nav ul .td li .link:focus {
     transition: right 0.8s cubic-bezier(1, 0, 0, 1);
   }
   .container-nav .hamburger-menu {
-    width: calc(100vw/20);
-    height: calc(100vw/20);
+    width: calc(100vw/18);
+    height: calc(100vw/18);
     position: fixed;
-    top: calc(100vw/15);
-    right: calc(100vw/15);
+    top: calc(100vw/12);
+    right: calc(100vw/12);
     cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -591,17 +591,6 @@ nav ul .td li .link:focus {
   background: #f2f2f2;
 }
 
-body {
-  min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -615,7 +604,6 @@ body {
   padding: 1em 2em;
   margin-top: auto;
   z-index: 9;
-  clear: both;
   margin-top: auto;
 }
 
