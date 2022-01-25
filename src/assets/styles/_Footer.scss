@@ -1,14 +1,10 @@
-
 .footer {
     display: flex;
     flex-direction: column;
     background: $gray;
     color: $white;
     padding: 1em 2em;
-    margin-top: auto;
     z-index: 9;
-    margin-top: auto;
-
     .row{
         display: flex;
         flex-direction: row;
