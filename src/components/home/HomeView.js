@@ -5,6 +5,7 @@ import { INCREASE_LEVEL_LIFE } from '../../utils/constants'
 
 export const HomeView = () => (
     <div className='bg'>
+        <div className="bgImg"></div>
         <div className="video-cont">
             <video className="bgVideo" autoPlay muted loop>
                 <source src ={require( "../../assets/video/HomeVid.mp4")} type="video/mp4"/>

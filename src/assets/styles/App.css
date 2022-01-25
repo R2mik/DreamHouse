@@ -213,12 +213,17 @@ nav ul .td li .link:focus {
   }
 }
 
+.bg {
+  height: 100vh;
+  width: 100vw;
+}
+
 @media (min-width: 736px) {
-  .video-cont {
+  .bg .video-cont {
     width: 100vw;
     height: 100vh;
   }
-  .video-cont .bgVideo {
+  .bg .video-cont .bgVideo {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
@@ -229,12 +234,13 @@ nav ul .td li .link:focus {
 }
 
 @media (max-width: 736px) {
-  .bgVideo {
+  .bg .bgVideo {
     display: none;
   }
-  .bg {
+  .bg .bgImg {
     background-image: url(../images/home-page3.jpg);
     height: 100%;
+    width: 100%;
     position: fixed;
     background-position: center;
     top: calc(2vh + 4em);
@@ -243,7 +249,7 @@ nav ul .td li .link:focus {
   }
 }
 
-.outer {
+.bg .outer {
   display: table;
   position: absolute;
   top: 0;
@@ -253,12 +259,12 @@ nav ul .td li .link:focus {
   z-index: 2;
 }
 
-.outer .middle {
+.bg .outer .middle {
   display: table-cell;
   vertical-align: middle;
 }
 
-.outer .middle .inner {
+.bg .outer .middle .inner {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -268,7 +274,7 @@ nav ul .td li .link:focus {
   opacity: 0;
 }
 
-.outer .middle .headline {
+.bg .outer .middle .headline {
   font-family: 'Yusei Magic', sans-serif;
   text-transform: uppercase;
   font-size: calc(20px + 3vw);
