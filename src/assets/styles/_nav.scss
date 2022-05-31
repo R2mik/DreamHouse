@@ -1,36 +1,37 @@
 .container {
     width: 100%;
+    height: calc(3vh + 4em);
     margin: 0 auto;
-    background: #f8f8f8;
+    background: #f3f3f3;
     z-index: 10;
 }
 
 
 .container-nav{
-    display: flex;
-    align-items: center;
+    @include flex-center();
     justify-content: space-between;
     position: fixed;
     top: 0;
     
     header {
+        text-align: center;
+        padding:  2em 2em;
+        
         .side-title {
             text-decoration: none;
         }
-        text-align: center;
-        padding:  2em 2em;
     
         h1{
             font-family: 'Lora', serif;
             font-weight: 400;
-            color: #143774;
+            color: $dark-blue;
             font-size: 2rem;
             margin: 0;
         }
     
         .subtitle {
             font-weight: bold;
-            color: #1792d2;
+            color: $blue;
             font-size: .75rem;
             margin: 0;
         }
@@ -53,15 +54,15 @@ nav {
                 
                 .link{
                     text-decoration: none;
-                    color: #707070;
+                    color: $gray;
                     font-weight: 700;
                 
                     &:hover{
-                    color: #1792d2;
+                    color: $blue;
                     }
                     &:focus {
-                        color: #707070;
-                        border-bottom: solid #707070 1px;
+                        color: $light-gray;
+                        border-bottom: solid $light-gray 1px;
                     }
                 }
             }
@@ -70,35 +71,33 @@ nav {
 }
 
 
-@media (max-width: 675px){
+@media (max-width: 736px){
     .container-nav{
         flex-direction: column;
         position: fixed;
         z-index: 10;
+        width: 100vw;
         
         header {
             text-align: center;
         }
         nav {
-            border: 2px solid black;
             width: 30%;
             height: 100%;
             background-color: #f3f3f3;
             position: fixed;
             top: 0;
             right: -31%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center();
             border-radius: 20% 0 0 50%;
             transition: right 0.8s cubic-bezier(1, 0, 0, 1);
         }
             .hamburger-menu {
-                width: 35px;
-                height: 30px;
+                width: calc(100vw/18);
+                height: calc(100vw/18);
                 position: fixed;
-                top: 50px;
-                right: 50px;
+                top: calc(100vw/12);
+                right: calc(100vw/12);
                 cursor: pointer;
                 display: flex;
                 flex-direction: column;
@@ -107,7 +106,7 @@ nav {
             .line {
                 width: 100%;
                 height: 3px;
-                background-color: #1792d2;
+                background-color: $blue;
                 transition: all 0.8s;
             }
             
@@ -142,13 +141,13 @@ nav {
                         
                         .link{
                             text-decoration: none;
-                            color: #707070;
+                            color: $gray;
                             
                             &::before {
                                 content: "";
                                 width: 100%;
                                 height: 2px;
-                                background-color: #1792d2;
+                                background-color: $blue;
                                 position: absolute;
                                 left: 0;
                                 top: 0;
@@ -161,7 +160,7 @@ nav {
                                 content: "";
                                 width: 100%;
                                 height: 2px;
-                                background-color: #1792d2;
+                                background-color: $blue;
                                 position: absolute;
                                 left: 0;
                                 bottom: 0;

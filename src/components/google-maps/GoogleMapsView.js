@@ -1,38 +1,19 @@
 import React from 'react'
 
-import { GoogleMap, useLoadScript} from "@react-google-maps/api";
-//import { SPOTS } from "./GoogleMapsData";
+import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 
-/* const spotsList = SPOTS.map((spot) => ({lat:spot.lat, lng:spot.lng}))
-
-console.log(spotsList); */
+import { SPOTS } from "./GoogleMapsData";
 
 const libraries = ["places"];
 
-
 const mapContainerStyle = {
-        width: "50vw",
+        width: "70vw",
         height: "50vh",
 };
 
-const centerB = {
-        lat: 53.133511,
-        lng: 23.151649,
-}
-
-const centerW = {
-        lat: 52.240790,
-        lng: 21.015220,
-}
-
-const centerG = {
-        lat: 54.408120,
-        lng: 18.634600,
-}
-
 export function GooglemapsView() {
         const {isLoaded, loadError} = useLoadScript({
-                googleMapsApiKey: "AIzaSyAUWeGjaHllqysVRdbjkF3GnLBswlA5TwY",
+                googleMapsApiKey: "AIzaSyAFB_GHyB8Ak7EttWFtWSVhtBP77n6vq2o",
                 libraries,
         })
         
@@ -43,42 +24,25 @@ export function GooglemapsView() {
         return(
                 <div className="map-cont">
                         <div className="grid-center">
-                                <div className="adress">
-                                        <GoogleMap 
-                                                mapContainerStyle={mapContainerStyle} 
-                                                zoom={15}
-                                                center={centerB}                 
-                                        ></GoogleMap>
-                                        <div className="adr-li">
-                                                <p>Lipowa 1</p>
-                                                <p>15-111 Białystok</p>
-                                                <p>tel. 111-111-111</p>
+                                {SPOTS.map((spot) => {
+                                        return (
+                                        <div key={`${spot.lag} ${spot.lng}`} className="adress">
+                                                <GoogleMap 
+                                                        mapContainerStyle={mapContainerStyle} 
+                                                        zoom={15}
+                                                        center={{
+                                                                lat: spot.lat,
+                                                                lng: spot.lng,
+                                                        }}                
+                                                ></GoogleMap>
+                                                <div className="adr-li">
+                                                        <p>{spot.town}</p>
+                                                        <p>{spot.post} {spot.street}</p>
+                                                        <p>{spot.tel}</p>
+                                                </div>
                                         </div>
-                                </div>
-                                <div className="adress">
-                                        <GoogleMap 
-                                                mapContainerStyle={mapContainerStyle} 
-                                                zoom={15}
-                                                center={centerW}                 
-                                        ></GoogleMap>
-                                        <div className="adr-li">
-                                                <p>Królewska 2</p>
-                                                <p>00-222 Warszawa</p>
-                                                <p>tel. 222-222-222</p>
-                                        </div>
-                                </div>
-                                <div className="adress">
-                                        <GoogleMap 
-                                                mapContainerStyle={mapContainerStyle} 
-                                                zoom={15}
-                                                center={centerG}                 
-                                        ></GoogleMap>
-                                        <div className="adr-li">
-                                                <p>Angielska 3</p>
-                                                <p>80-333 Gdańsk</p>
-                                                <p>tel. 333-333-333</p>
-                                        </div>
-                                </div>
+                                        )})
+                                }
                         </div>
                 </div>
         )

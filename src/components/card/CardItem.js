@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-// please destructuring props to one object with many properties ({ path, ...ect})
 export default function CardItem(props) {
     return (
         <li className='cards__item'>

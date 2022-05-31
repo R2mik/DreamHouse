@@ -6,8 +6,8 @@ export const SignUpView = ({handleSubmit, submitForm, register, errors, valid}) 
             <form className="register-form" onSubmit={handleSubmit(submitForm)}>
             
             { valid  ? <div className="success-message">Sukces! Wiadomość została wysłana</div> : null}
-
-            <input
+           
+                <input
                 className="form-field"
                 type="text"
                 placeholder="First Name"
@@ -42,7 +42,7 @@ export const SignUpView = ({handleSubmit, submitForm, register, errors, valid}) 
                 ref={register}
                 />                   
                 <span className = "er">{errors.message?.message}</span>
-                
+            
                 {valid ? null : <button className="send-btn form-field" type="submit">Send</button>}
             </form>
         </div>

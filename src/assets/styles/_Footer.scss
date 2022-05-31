@@ -1,31 +1,23 @@
-@import "./mixins/flex-center";
-
-body{
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
 .footer {
     display: flex;
     flex-direction: column;
-    background: #333;
-    color: white;
+    background: $gray;
+    color: $white;
     padding: 1em 2em;
-    margin-top: auto;
     z-index: 9;
-
+    width: 100vw;
     .row{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 1em auto;
         .col {
-            //display: flex;
+            display: flex;
             flex-direction: column;
            
             a {
                 @include flex-center;
-                color: white;
+                color: $white;
                 font-size: 1em;
 
                 .icons {

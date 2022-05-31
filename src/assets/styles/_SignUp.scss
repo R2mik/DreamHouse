@@ -1,14 +1,13 @@
 .cont{
-  background: white;
-  display: flex;
-  min-height: 80vh;
-  justify-content: center;
-  align-items: center;
+  @include flex-center();
+  background: $white;
+  height: calc(100vh - 64px);
+
   
   .form-container {
     width: 360px;
-    background-color: white;
-    margin: auto;
+    background-color: $white;
+    margin: 200px auto;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     padding: 10px;
     
@@ -22,7 +21,7 @@
           font-family: "Roboto", sans-serif;
           background-color: #43d217e0;
           padding: 15px;
-          color: white;
+          color: $white;
         }
         
         .form-field {
@@ -35,8 +34,8 @@
           
         }
         .send-btn {
-          background: #1792d2;
-          color: white;
+          background: $blue;
+          color: $white;
           cursor: pointer;
         }
         
