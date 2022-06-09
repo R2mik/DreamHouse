@@ -14,7 +14,7 @@ export default function Nav(){
     return(
         <div className="container container-nav">
             <header>
-                <Link to="/DreamHouse" className="side-title" onClick={()=>closeMobileMenu()}>
+                <Link to="/" className="side-title" onClick={()=>closeMobileMenu()}>
                     <h1>Dream House</h1>
                     <p className="subtitle">Live your dream</p>
                 </Link>

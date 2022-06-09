@@ -15,7 +15,8 @@
     
     header {
         text-align: center;
-        padding:  2em 2em;
+        padding:  2vh;
+        @include flex-center;
         
         .side-title {
             text-decoration: none;
@@ -93,11 +94,11 @@ nav {
             transition: right 0.8s cubic-bezier(1, 0, 0, 1);
         }
             .hamburger-menu {
-                width: calc(100vw/18);
-                height: calc(100vw/18);
+                width: 2rem;
+                height: 2rem;
                 position: fixed;
-                top: calc(100vw/12);
-                right: calc(100vw/12);
+                top: calc((3vh + 4em)/3);
+                right: 4vw;
                 cursor: pointer;
                 display: flex;
                 flex-direction: column;

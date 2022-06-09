@@ -25,7 +25,16 @@
 
 .container-nav header {
   text-align: center;
-  padding: 2em 2em;
+  padding: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container-nav header .side-title {
@@ -117,11 +126,11 @@ nav ul .td li .link:focus {
     transition: right 0.8s cubic-bezier(1, 0, 0, 1);
   }
   .container-nav .hamburger-menu {
-    width: calc(100vw/18);
-    height: calc(100vw/18);
+    width: 2rem;
+    height: 2rem;
     position: fixed;
-    top: calc(100vw/12);
-    right: calc(100vw/12);
+    top: calc((3vh + 4em)/3);
+    right: 4vw;
     cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -218,6 +227,7 @@ nav ul .td li .link:focus {
   height: 100vh;
   width: 100vw;
   /* @media (max-width: 736px){
+
   .bgVideo {
     display: none;
   }
@@ -281,6 +291,7 @@ nav ul .td li .link:focus {
   text-transform: uppercase;
   font-size: calc(20px + 3vw);
   color: #fff;
+  text-align: center;
 }
 
 @keyframes fadein {
@@ -351,8 +362,8 @@ nav ul .td li .link:focus {
     text-align: center;
   }
   #carousel {
-    width: 75%;
-    height: 85vh;
+    width: 60%;
+    height: 70vh;
     margin: 2em auto;
   }
   #carousel .carouselInner {

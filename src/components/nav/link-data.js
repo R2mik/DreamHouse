@@ -1,6 +1,6 @@
 export const LData = [
     {
-        to: "/DreamHouse",
+        to: "/",
         text: "Home "
     },    
     {

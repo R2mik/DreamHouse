@@ -1,7 +1,7 @@
 import React from 'react'
 
-import {Button} from '../shared'
-import {INCREASE_LEVEL_LIFE} from '../../utils/constants'
+import { Button } from '../shared'
+import { INCREASE_LEVEL_LIFE } from '../../utils/constants'
 
 export const HomeView = () => (
     <div className='bg'>
@@ -14,5 +14,6 @@ export const HomeView = () => (
                 {<Button className='btns' buttonStyle='btn-outline' buttonSize='btn-large'><b>GET STARTED</b></Button>}
             </div>          
         </div>
+
     </div>
 )
